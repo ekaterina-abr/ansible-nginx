@@ -14,3 +14,5 @@
       service: name=nginx state=started
     - name: Print hello
       template: src=nginx.conf dest=/etc/nginx/nginx.conf
+    - name: restart nginx
+      service: name=nginx state=restarted
